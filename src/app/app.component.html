@@ -1,0 +1,8 @@
+<app-child
+  (click)="doSomething($event)"
+  [disableButton]="disableButton | async"
+></app-child>
+
+<p>
+  response: {{ responseData | async  }}
+</p>
